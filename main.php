@@ -73,19 +73,62 @@
     <h2>Actividades que se realizan</h2>
     <p>Talleres de comunicación, jornadas familiares, charlas motivacionales, asesorías individuales y acompañamiento en procesos familiares.</p>
   </div>
-
-  <div class="section">
-    <h2>Responsables</h2>
-    <p>El equipo está conformado por orientadores.</p>
-  </div>
 </div>
-  <h2 style="margin-left:20%; font-size:28px;">Fundadores</h2>
+
+<h2 style="margin-left:20%; font-size:34px;">Responsables</h2>
+<div class="responsables">
+    <div class="section">
+      <h2>Adoración</h2>
+      <img src="imagenes/Adoración.jpg" alt="">
+    </div>
+    <div class="section">
+      <h2>Amor y Misericordia</h2>
+      <img src="imagenes/.jpg" alt="">
+    </div>
+    <div class="section">
+      <h2>Diseño y ambiente</h2>
+      <img src="imagenes/.jpg" alt="">
+    </div>
+    <div class="section">
+      <h2>Danza</h2>
+      <img src="imagenes/.jpg" alt="">
+    </div>
+    <div class="section">
+      <h2>Intercesión</h2>
+      <img src="imagenes/Adoración.jpg" alt="">
+    </div>
+    <div class="section">
+      <h2>Operaciones</h2>
+      <img src="imagenes/Amor y Misericordia.jpg" alt="">
+    </div>
+    <div class="section">
+      <h2>Protocolo</h2>
+      <img src="imagenes/.jpg" alt="">
+    </div>
+    <div class="section">
+      <h2>Registro y seguimiento</h2>
+      <img src="imagenes/.jpg" alt="">
+    </div>
+    <div class="section">
+      <h2>UMAV</h2>
+      <img src="imagenes/.jpg" alt="">
+    </div>
+    <div class="section">
+      <h2>VDF KIDS</h2>
+      <img src="imagenes/.jpg" alt="">
+    </div>
+    <div class="section">
+      <h2>Escuela de la Visión</h2>
+      <img src="imagenes/.jpg" alt="">
+    </div>
+  </div>
+  <h2 style="margin-left:20%; font-size:34px;">Fundadores</h2>
   <section class="fundadores">
     <div class="div1">
-      <h3>Neptali y Katiusca De Peroza</h3>
+      <h3>Juan Mata y Yenny De Mata</h3>
     </div>
     <div class="div2">
-      <img src="https://iglesiafiladelfiajv.com/sites/default/files/abraham-y-betty.jpg" alt="">
+      <img src="imagenes/Apóstol Juan Mata y Profeta Yenny De Mata.jpg" alt="">
     </div>
   </section>
   <section class="contactos">
@@ -95,6 +138,7 @@
   <footer>
     &copy; 2025 Visión de Familia. Todos los derechos reservados.
   </footer>
+
 </body>
 
 </html>

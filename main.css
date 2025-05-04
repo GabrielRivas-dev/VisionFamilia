@@ -198,6 +198,7 @@ section {
 .fundadores {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 3rem;
 }
 
@@ -209,7 +210,7 @@ section {
 }
 
 .fundadores .div2 img {
-  width: 100%;
+  width: 70%;
   max-width: 500px;
   border-radius: 8px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -225,6 +226,28 @@ section {
 .contactos h3:after {
   background: white;
 }
+
+.responsables {
+  display: flex;
+
+  overflow-x: scroll;
+  background-color: #121212;
+  padding: 10px;
+}
+.responsables .section{
+  width: 25rem;
+  height: 400px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.responsables .section img{
+  width: 70%;
+  
+}
+
 
 /* Footer */
 footer {
