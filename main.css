@@ -228,8 +228,8 @@ section {
 }
 
 .responsables {
-  display: flex;
-
+  display: inline-flex;
+  width: 100%;
   overflow-x: scroll;
   background-color: #121212;
   padding: 10px;
