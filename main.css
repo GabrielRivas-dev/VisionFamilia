@@ -292,11 +292,9 @@ header button:hover {
 }
 
 .depto-img img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #e74c3c;
   transition: all 0.3s ease;
   background: white;
   box-shadow: inset 0 0 0 2px white, 0 4px 8px rgba(0,0,0,0.1);
