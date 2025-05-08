@@ -267,33 +267,65 @@ header button:hover {
   transform: translateX(5px);
 }
 
-/* Departamentos */
+/* SECCIÓN DEPARTAMENTOS - ESTILO VISUAL */
 .departamentos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  padding: 0 5% 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2.5rem;
+  padding: 3rem 5%;
+  place-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.departamentos article {
-  background: #2d2d30;
-  color: white;
-  padding: 2rem 1.5rem;
-  border-radius: 8px;
-  text-align: center;
-  transition: all 0.3s ease;
-  height: auto;
-  min-height: 200px;
+.depto-img {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 1.2rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  filter: grayscale(15%);
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  width: 100%;
 }
 
-.departamentos article:hover {
-  background: #e74c3c;
-  transform: translateY(-5px);
+.depto-img img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #e74c3c;
+  transition: all 0.3s ease;
+  background: white;
+  box-shadow: inset 0 0 0 2px white, 0 4px 8px rgba(0,0,0,0.1);
+  padding: 4px;
 }
 
+.depto-img span {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #2d2d30;
+  opacity: 0.9;
+  padding: 0 0.5rem;
+}
+
+/* Efectos hover */
+.depto-img:hover {
+  transform: scale(1.08) translateY(-8px);
+  filter: grayscale(0%);
+}
+
+.depto-img:hover img {
+  border-color: #ff6b5b;
+  box-shadow: 0 8px 20px rgba(231, 76, 60, 0.3);
+  transform: rotate(2deg);
+}
+
+.depto-img:hover span {
+  color: #e74c3c;
+}
 /* Container (Objetivos, Propósitos...) */
 .container {
   display: grid;
