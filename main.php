@@ -69,16 +69,55 @@
   </section>
   <h2 style="text-align: center; font-size:28px;">Departamentos</h2>
   <section class="departamentos">
-    <article>Registro y seguimiento</article>
-    <article>Unidad de medios audiovisuales</article> 
-    <article>Protocolo</article> 
-    <article>Visionarios</article>
-    <article>VDG Kid's</article>
-    <article>Danza</article>
-    <article>Adoración</article>
-    <article>Escuela de la visión</article>
-  </section>
-  <div class="container">
+    <a href="url_de_la_pagina_registro" class="depto-img">
+        <article>
+            <img src="ruta_imagen_registro.jpg" alt="Registro y seguimiento">
+        </article>
+    </a>
+    
+    <a href="url_de_la_pagina_medios" class="depto-img">
+        <article>
+            <img src="imagenes_departamentos/UnidadMediosAudiovisuales.jpg" alt="Unidad de medios audiovisuales">
+        </article>
+    </a>
+    
+    <a href="url_de_la_pagina_protocolo" class="depto-img">
+        <article>
+            <img src="ruta_imagen_protocolo.jpg" alt="Protocolo">
+        </article>
+    </a>
+    
+    <a href="url_de_la_pagina_visionarios" class="depto-img">
+        <article>
+            <img src="ruta_imagen_visionarios.jpg" alt="Visionarios">
+        </article>
+    </a>
+    
+    <a href="url_de_la_pagina_kids" class="depto-img">
+        <article>
+            <img src="imagenes_departamentos/VDFKids.jpg" alt="VDG Kid's">
+        </article>
+    </a>
+    
+    <a href="url_de_la_pagina_danza" class="depto-img">
+        <article>
+            <img src="imagenes_departamentos/Danza.png" alt="Danza">
+        </article>
+    </a>
+    
+    <a href="url_de_la_pagina_adoracion" class="depto-img">
+        <article>
+            <img src="imagenes_departamentos/Adoración.jpg" alt="Adoración">
+        </article>
+    </a>
+    
+    <a href="url_de_la_pagina_escuela" class="depto-img">
+        <article>
+            <img src="ruta_imagen_escuela.jpg" alt="Escuela de la visión">
+        </article>
+    </a>
+</section>
+<div class="container">
   <div class="section">
     <h2>Objetivos</h2>
     <p>Que las almas lleguen al Reino de los Cielos.</p>
