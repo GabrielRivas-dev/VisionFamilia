@@ -66,12 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Observar el elemento
     observer.observe(fundadores);
   });
-  // Efecto parallax para la portada
-window.addEventListener('scroll', function() {
-    const hero = document.querySelector('.hero-portada');
-    const scrollPosition = window.pageYOffset;
-    hero.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
-  });
+
   
   // Animación al hacer scroll para Quiénes Somos
   document.addEventListener('DOMContentLoaded', function() {

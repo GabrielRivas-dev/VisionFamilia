@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Visión de Familia</title>
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -35,7 +36,7 @@
         <div class="divisor"></div>
       </div>
       <div class="texto-destacado">
-        <p>Somos un <strong>Ministerio Apostólico y Profético</strong>, que nace del corazón de Dios, fundamentados sobre la doctrina de los apóstoles, basados en la predicación del evangelio puro de Jesucristo.</p>
+        <p>Somos un ministerio apostólico y profético que emerge del corazón de Dios con el propósito de transformar familias, siguiendo el principio establecido por Dios a Abraham en su palabra: "Y en ti serán benditas todas las naciones de la tierra" (Génesis 12:3). Estamos fundamentados en la doctrina de los apóstoles y en la predicación del evangelio, bajo la dirección del Apóstol Juan Carlo Mata y la Profeta Yenny de Mata, junto a un equipo de pastores y líderes comprometidos.</p>
       </div>
       <div class="columnas-container">
         <div class="columna">
@@ -50,9 +51,44 @@
     </div>
   </div>
 </section>
+<section class="vision-mision-paralela">
+  <div class="vm-container">
+    <!-- Tarjeta de Misión -->
+    <div class="vm-card mision-card">
+      <div class="vm-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
+          <path d="M12 6a6 6 0 1 0 6 6 6 6 0 0 0-6-6zm0 10a4 4 0 1 1 4-4 4 4 0 0 1-4 4z"/>
+          <circle cx="12" cy="12" r="2"/>
+        </svg>
+      </div>
+      <h3>Nuestra Misión</h3>
+      <div class="vm-content">
+        <p>Facilitar al creyente el descubrimiento, desarrollo y fortalecimiento de sus dones y talentos en Dios, con el propósito de alcanzar la plenitud del hombre perfecto y contribuir a la edificación de la iglesia de Jesucristo.</p>
+      </div>
+      <div class="vm-reference">Efesios 4:12-13</div>
+    </div>
+
+    <!-- Tarjeta de Visión -->
+    <div class="vm-card vision-card">
+      <div class="vm-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
+          <path d="M15 12a3 3 0 1 1-3-3 3 3 0 0 1 3 3z"/>
+        </svg>
+      </div>
+      <h3>Nuestra Visión</h3>
+      <div class="vm-content">
+        <p>Que cada persona ganada para el reino de Dios no solo reconozca su amor, sino que también aprenda a cultivar una relación profunda con Él.</p>
+        <p>Anhelamos que cada individuo se comprometa a vivir conforme a Su Palabra, reflejando así Su gloria en todas sus acciones y decisiones.</p>
+      </div>
+      <div class="vm-reference">Proverbios 29:18</div>
+    </div>
+  </div>
+</section>
   <section class="que-hacen">
     <div class="div1">
-      <img src="https://images.pexels.com/photos/25204871/pexels-photo-25204871.jpeg" alt="">
+      <img src="imagenes/Carrucel (Nosotros 5).jpg" alt="">
     </div>
     <div class="div2">
       <h3>¿Que hacemos?</h3>
@@ -117,14 +153,37 @@
         </article>
     </a>
 </section>
-<div class="container">
-  <div class="section">
-    <h2>Objetivos</h2>
-    <p>Que las almas lleguen al Reino de los Cielos.</p>
-    <p>Alcanzar y ganar las Almas perdidas.</p>
-    <p>Ayudarles a Perseverar en Dios.</p>
-  </div>
+<section class="objetivos-section">
+    <h2 class="section-title">Nuestros <span>OBJETIVOS</span></h2>
+    
+    <div class="objetivos-grid">
+      <!-- Objetivo 1 -->
+      <div class="objetivo-card">
+        <div class="objetivo-icon">1</div>
+        <div class="objetivo-text">
+          <p>Que las personas conozcan el evangelio de Jesucristo</p>
+        </div>
+      </div>
+      
+      <!-- Objetivo 2 -->
+      <div class="objetivo-card">
+        <div class="objetivo-icon">2</div>
+        <div class="objetivo-text">
+          <p>Guiar a las personas al camino de la salvación</p>
+        </div>
+      </div>
+      
+      <!-- Objetivo 3 -->
+      <div class="objetivo-card">
+        <div class="objetivo-icon">3</div>
+        <div class="objetivo-text">
+          <p>Consolidar a las personas para que permanezcan y sirvan en la obra de Dios</p>
+        </div>
+      </div>
+    </div>
 
+</section>
+<div class="container">
   <div class="section">
     <h2>Propósitos</h2>
     <p>Guiar a las familias en el camino de crecimiento conjunto, amor, comprensión y desarrollo de sus potencialidades humanas y espirituales.</p>
@@ -185,6 +244,155 @@
     </div>
   </div>
   </div>
+ <section class="camino-vision">
+    <h2 class="section-title">ACOMPÁÑANOS AL <span>CAMINO DE LA VISIÓN</span></h2>
+    
+    <div class="pasos-container">
+      <!-- Paso 1 -->
+      <div class="paso-card">
+        <div class="paso-imagen">
+          <img src="imagenes/1-Proyecto visionario.jpg" alt="Proyecto Visionario">
+        </div>
+        <div class="paso-contenido">
+          <div class="paso-numero">1</div>
+          <h3>Proyecto Visionario</h3>
+        </div>
+        <div class="paso-flecha">
+          <svg viewBox="0 0 24 24">
+            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+          </svg>
+        </div>
+      </div>
+      
+      <!-- Paso 2 -->
+      <div class="paso-card">
+        <div class="paso-imagen">
+          <img src="imagenes/2-Bautismo.jpg" alt="Bautismo">
+        </div>
+        <div class="paso-contenido">
+          <div class="paso-numero">2</div>
+          <h3>Bautismo</h3>
+        </div>
+        <div class="paso-flecha">
+          <svg viewBox="0 0 24 24">
+            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+          </svg>
+        </div>
+      </div>
+      
+      <!-- Paso 3 -->
+      <div class="paso-card">
+        <div class="paso-imagen">
+          <img src="imagenes/3-Escuela de la visión.jpg" alt="Escuela de la Visión">
+        </div>
+        <div class="paso-contenido">
+          <div class="paso-numero">3</div>
+          <h3>Escuela de la Visión</h3>
+        </div>
+        <div class="paso-flecha">
+          <svg viewBox="0 0 24 24">
+            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+          </svg>
+        </div>
+      </div>
+      
+      <!-- Paso 4 -->
+      <div class="paso-card">
+        <div class="paso-imagen">
+          <img src="imagenes/4-Servicio en la obra.jpg" alt="Servicio en la obra">
+        </div>
+        <div class="paso-contenido">
+          <div class="paso-numero">4</div>
+          <h3>Servicio en la obra</h3>
+        </div>
+        <div class="paso-flecha">
+          <svg viewBox="0 0 24 24">
+            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+          </svg>
+        </div>
+      </div>
+      
+      <!-- Paso 5 -->
+      <div class="paso-card">
+        <div class="paso-imagen">
+          <img src="imagenes/5-Liderazgo ministerial.jpg" alt="Liderazgo Ministerial">
+        </div>
+        <div class="paso-contenido">
+          <div class="paso-numero">5</div>
+          <h3>Liderazgo Ministerial</h3>
+        </div>
+      </div>
+    </div>
+</section>
+<section class="doctrina-ministerial">
+    <h2 class="section-title">Nuestra <span>Doctrina Ministerial</span></h2>
+    
+    <div class="doctrina-grid">
+      <!-- Item 1 -->
+      <div class="doctrina-card">
+        <div class="doctrina-icon">📖</div>
+        <h3>Sagradas Escrituras</h3>
+        <p class="doctrina-text">Fundamento de nuestra fe y práctica ministerial</p>
+        <p class="bible-verse">2 Timoteo 3:16-17</p>
+      </div>
+      
+      <!-- Item 2 -->
+      <div class="doctrina-card">
+        <div class="doctrina-icon">✝️</div>
+        <h3>Un solo Dios</h3>
+        <p class="doctrina-text">Padre, Hijo y Espíritu Santo</p>
+        <p class="bible-verse">1 Juan 5:7</p>
+      </div>
+      
+      <!-- Item 3 -->
+      <div class="doctrina-card">
+        <div class="doctrina-icon">🕊️</div>
+        <h3>Evangelio de salvación</h3>
+        <p class="doctrina-text">Cristo como único camino de redención</p>
+        <p class="bible-verse">Juan 3:16</p>
+      </div>
+      
+      <!-- Item 4 -->
+      <div class="doctrina-card">
+        <div class="doctrina-icon">👨‍👩‍👧‍👦</div>
+        <h3>Familia de la fe</h3>
+        <p class="doctrina-text">Hijos de Dios por la fe en Cristo</p>
+        <p class="bible-verse">Juan 1:12</p>
+      </div>
+      
+      <!-- Item 5 -->
+      <div class="doctrina-card">
+        <div class="doctrina-icon">🎁</div>
+        <h3>Desarrollo de dones</h3>
+        <p class="doctrina-text">Ambiente interactivo basado en cada dádiva espiritual</p>
+        <p class="bible-verse">Romanos 12:6-8</p>
+      </div>
+      
+      <!-- Item 6 -->
+      <div class="doctrina-card">
+        <div class="doctrina-icon">🏛️</div>
+        <h3>Cuerpo de Cristo</h3>
+        <p class="doctrina-text">Unidad en la diversidad de miembros</p>
+        <p class="bible-verse">1 Corintios 12:13</p>
+      </div>
+      
+      <!-- Item 7 -->
+      <div class="doctrina-card">
+        <div class="doctrina-icon">💧</div>
+        <h3>Un solo bautismo</h3>
+        <p class="doctrina-text">Símbolo de identificación con Cristo</p>
+        <p class="bible-verse">Efesios 4:5</p>
+      </div>
+      
+      <!-- Item 8 -->
+      <div class="doctrina-card">
+        <div class="doctrina-icon">💰</div>
+        <h3>Riqueza en Cristo</h3>
+        <p class="doctrina-text">Bendición espiritual y provisión divina</p>
+        <p class="bible-verse">1 Tesalonicenses 4:6-11</p>
+      </div>
+    </div>
+</section>
   <section class="fundadores-container">
   <div class="fundadores">
     <div class="fundadores-info">
@@ -200,13 +408,61 @@
     </div>
   </div>
 </section>
-  <section class="contactos">
-    <h3>Contactos</h3>
-    <p> direccion: JQFF+5XH, Barinas 5201, Barinas, Venezuela</p>
-  </section>
-  <footer>
-    &copy; 2025 Visión de Familia. Todos los derechos reservados.
-  </footer>
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Sección de llamado a acción -->
+    <div class="footer-cta">
+      <h3>¿Listo para dar el siguiente paso en tu vida espiritual?</h3>
+      <a href="#" class="contact-btn">CONTÁCTANOS</a>
+    </div>
+    
+    <!-- Sección de información -->
+    <div class="footer-info">
+      <!-- Columna de ubicación -->
+      <div class="footer-column">
+        <h4>UBICACIÓN</h4>
+        <address>
+          Av. 23 de Enero con Av. Las Samanes<br>
+          Edificio Autocontrol<br>
+          Barquisimeto, Sector La Federación<br>
+          Barquisimeto, Venezuela
+        </address>
+      </div>
+      
+      <!-- Columna de donaciones -->
+      <div class="footer-column">
+        <h4>DONACIONES</h4>
+        <p>2 Corintios 9:10</p>
+        <div class="payment-methods">
+          <p>Métodos de pago:</p>
+          <div class="payment-icons">
+            <span class="payment-icon">💳</span>
+            <span class="payment-icon">🏦</span>
+            <span class="payment-icon">📱</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Columna de contacto -->
+      <div class="footer-column">
+        <h4>CONTACTO</h4>
+        <p><i class="fas fa-phone"></i> +58 123 456 7890</p>
+        <p><i class="fas fa-envelope"></i> contacto@visiondefamilia.com</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Derechos de autor -->
+    <div class="footer-bottom">
+      <p>&copy; 2023 Visión de Familia. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
 <script src="main.js"></script>
 </body>
 
