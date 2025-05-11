@@ -88,3 +88,28 @@ document.addEventListener('DOMContentLoaded', function() {
       observer.observe(el);
     });
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+    const slideInterval = 5000; // 5 segundos
+    
+    function nextSlide() {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }
+    
+    // Iniciar el carrusel automático
+    let carruselInterval = setInterval(nextSlide, slideInterval);
+    
+    // Opcional: Pausar al hacer hover
+    const heroSection = document.querySelector('.hero-portada');
+    heroSection.addEventListener('mouseenter', () => {
+      clearInterval(carruselInterval);
+    });
+    
+    heroSection.addEventListener('mouseleave', () => {
+      carruselInterval = setInterval(nextSlide, slideInterval);
+    });
+  });
