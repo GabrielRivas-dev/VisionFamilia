@@ -11,10 +11,47 @@
 
 <body>
 
-  <header>
-    <h1>Visión de Familia</h1>
-    <button onclick="window.scrollTo(0, 0)">Inicio</button>
-  </header>
+  <header class="main-header">
+  <div class="header-container">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="">
+        <img src="imagenes/logo.jpg" alt="Logo de la Iglesia">
+      </a>
+      <h2>Visión Familia</h2>
+    </div>
+    
+    <!-- Menú principal (visible en desktop) -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Ministerios</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Botón de menú móvil -->
+    <button class="menu-toggle" aria-label="Abrir menú">
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+    </button>
+    
+    <!-- Menú móvil (oculto por defecto) -->
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Ministerios</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Donaciones</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
 <!-- Portada hero con carrusel de imágenes -->
 <section class="hero-portada">
@@ -32,7 +69,6 @@
   <div class="hero-content">
     <h1 class="hero-titulo">Visión de Familia</h1>
     <p class="hero-subtitulo">Construyendo familias según el corazón de Dios</p>
-    <a href="#quienes-somos" class="hero-boton">Conoce Quiénes Somos</a>
   </div>
 </section>
 
@@ -207,7 +243,8 @@
 
 <h2 style="margin-left:20%; font-size:34px;">Responsables</h2>
 <div class="carrusel-container">
-<div class="responsables">
+  <div class="carrusel-scroll">
+    <div class="responsables">
     <div class="section">
       <h2>Adoración</h2>
       <img src="imagenes/Adoración.jpg" alt="">

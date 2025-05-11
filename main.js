@@ -1,50 +1,112 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const carrusel = document.querySelector('.responsables');
-    const sections = document.querySelectorAll('.section');
-    const carruselContainer = document.querySelector('.carrusel-container');
+  const menuToggle = document.querySelector('.menu-toggle');
+  const mobileNav = document.querySelector('.mobile-nav');
+  
+  // Abrir/cerrar menú móvil
+  menuToggle.addEventListener('click', function() {
+    this.classList.toggle('active');
+    mobileNav.classList.toggle('active');
     
-    // Duplicar las secciones para crear el efecto infinito
-    carrusel.innerHTML += carrusel.innerHTML;
-    
-    // Configurar la animación
-    let animation;
-    let requestId;
-    let speed = 1; // Velocidad del desplazamiento (píxeles por frame)
-    let position = 0;
-    let isPaused = false;
-    
-    function animate() {
-      if (!isPaused) {
-        position -= speed;
-        
-        // Cuando llegamos al final del carrusel duplicado, reiniciamos la posición
-        if (position <= -carrusel.scrollWidth / 2) {
-          position = 0;
-        }
-        
-        carrusel.style.transform = `translateX(${position}px)`;
-      }
-      
-      requestId = requestAnimationFrame(animate);
+    // Bloquear scroll del body cuando el menú está abierto
+    if(mobileNav.classList.contains('active')) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
     }
-    
-    // Iniciar animación
-    animate();
-    
-    // Pausar al hacer hover en el contenedor o secciones
-    carruselContainer.addEventListener('mouseenter', () => {
-      isPaused = true;
-    });
-    
-    carruselContainer.addEventListener('mouseleave', () => {
-      isPaused = false;
-    });
-    
-    // Limpiar animación al salir de la página
-    window.addEventListener('beforeunload', () => {
-      cancelAnimationFrame(requestId);
+  });
+  
+  // Cerrar menú al hacer clic en un enlace
+  const navLinks = document.querySelectorAll('.mobile-nav a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      menuToggle.classList.remove('active');
+      mobileNav.classList.remove('active');
+      document.body.style.overflow = '';
     });
   });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const carrusel = document.querySelector('.responsables');
+  const scrollContainer = document.querySelector('.carrusel-scroll');
+  const secciones = document.querySelectorAll('.section');
+  
+  // Duplicar elementos para efecto infinito
+  carrusel.innerHTML += carrusel.innerHTML;
+  
+  // Pausar animación al hacer hover o interactuar
+  carrusel.addEventListener('mouseenter', () => {
+    carrusel.style.animationPlayState = 'paused';
+  });
+  
+  carrusel.addEventListener('mouseleave', () => {
+    carrusel.style.animationPlayState = 'running';
+  });
+  
+  // Scroll manual
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+  
+  scrollContainer.addEventListener('mousedown', (e) => {
+    isDown = true;
+    startX = e.pageX - scrollContainer.offsetLeft;
+    scrollLeft = scrollContainer.scrollLeft;
+    carrusel.style.animationPlayState = 'paused';
+    scrollContainer.style.cursor = 'grabbing';
+  });
+  
+  scrollContainer.addEventListener('mouseleave', () => {
+    isDown = false;
+    carrusel.style.animationPlayState = 'running';
+    scrollContainer.style.cursor = 'grab';
+  });
+  
+  scrollContainer.addEventListener('mouseup', () => {
+    isDown = false;
+    carrusel.style.animationPlayState = 'running';
+    scrollContainer.style.cursor = 'grab';
+  });
+  
+  scrollContainer.addEventListener('mousemove', (e) => {
+    if(!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - scrollContainer.offsetLeft;
+    const walk = (x - startX) * 2;
+    scrollContainer.scrollLeft = scrollLeft - walk;
+  });
+  
+  // Touch events para móviles
+  scrollContainer.addEventListener('touchstart', (e) => {
+    isDown = true;
+    startX = e.touches[0].pageX - scrollContainer.offsetLeft;
+    scrollLeft = scrollContainer.scrollLeft;
+    carrusel.style.animationPlayState = 'paused';
+  }, {passive: false});
+  
+  scrollContainer.addEventListener('touchend', () => {
+    isDown = false;
+    carrusel.style.animationPlayState = 'running';
+  });
+  
+  scrollContainer.addEventListener('touchmove', (e) => {
+    if(!isDown) return;
+    e.preventDefault();
+    const x = e.touches[0].pageX - scrollContainer.offsetLeft;
+    const walk = (x - startX) * 2;
+    scrollContainer.scrollLeft = scrollLeft - walk;
+  }, {passive: false});
+  
+  // Reiniciar posición cuando la animación completa un ciclo
+  carrusel.addEventListener('animationiteration', () => {
+    if(carrusel.offsetLeft >= 0) {
+      carrusel.style.animation = 'none';
+      setTimeout(() => {
+        carrusel.style.animation = 'scroll 30s linear infinite';
+      }, 10);
+    }
+  });
+});
   // Efecto de aparición al hacer scroll
 document.addEventListener('DOMContentLoaded', function() {
     const fundadores = document.querySelector('.fundadores');
