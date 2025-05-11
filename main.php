@@ -16,13 +16,23 @@
     <button onclick="window.scrollTo(0, 0)">Inicio</button>
   </header>
 
- <!-- Portada hero con efecto parallax -->
+<!-- Portada hero con carrusel de imágenes -->
 <section class="hero-portada">
+  <div class="hero-slideshow">
+    <div class="slide active" style="background-image: url('imagenes/Principal1.jpg');"></div>
+    <div class="slide" style="background-image: url('imagenes/Portada.jpg');"></div>
+    <div class="slide" style="background-image: url('imagenes/Portada1.jpg');"></div>
+    <div class="slide" style="background-image: url('imagenes/Portada2.jpg');"></div>
+    <div class="slide" style="background-image: url('imagenes/Portada3.jpg');"></div>
+    <div class="slide" style="background-image: url('imagenes/Portada4.jpg');"></div>
+    <div class="slide" style="background-image: url('imagenes/Portada6.jpg');"></div>
+  </div>
+  
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1 class="hero-titulo">Visión de Familia</h1>
     <p class="hero-subtitulo">Construyendo familias según el corazón de Dios</p>
-    <a href="#quienes-somos" class="hero-boton">Conoce nuestra visión</a>
+    <a href="#quienes-somos" class="hero-boton">Conoce Quiénes Somos</a>
   </div>
 </section>
 
@@ -251,7 +261,7 @@
       <!-- Paso 1 -->
       <div class="paso-card">
         <div class="paso-imagen">
-          <img src="imagenes/1-Proyecto visionario.jpg" alt="Proyecto Visionario">
+          <img src="imagenes/Visionario.jpg" alt="Proyecto Visionario">
         </div>
         <div class="paso-contenido">
           <div class="paso-numero">1</div>
@@ -267,7 +277,7 @@
       <!-- Paso 2 -->
       <div class="paso-card">
         <div class="paso-imagen">
-          <img src="imagenes/2-Bautismo.jpg" alt="Bautismo">
+          <img src="imagenes/Bautismo.jpg" alt="Bautismo">
         </div>
         <div class="paso-contenido">
           <div class="paso-numero">2</div>
@@ -283,7 +293,7 @@
       <!-- Paso 3 -->
       <div class="paso-card">
         <div class="paso-imagen">
-          <img src="imagenes/3-Escuela de la visión.jpg" alt="Escuela de la Visión">
+          <img src="imagenes/Escuela.jpg" alt="Escuela de la Visión">
         </div>
         <div class="paso-contenido">
           <div class="paso-numero">3</div>
@@ -299,7 +309,7 @@
       <!-- Paso 4 -->
       <div class="paso-card">
         <div class="paso-imagen">
-          <img src="imagenes/4-Servicio en la obra.jpg" alt="Servicio en la obra">
+          <img src="imagenes/Servicio.jpg" alt="Servicio en la obra">
         </div>
         <div class="paso-contenido">
           <div class="paso-numero">4</div>
@@ -315,17 +325,22 @@
       <!-- Paso 5 -->
       <div class="paso-card">
         <div class="paso-imagen">
-          <img src="imagenes/5-Liderazgo ministerial.jpg" alt="Liderazgo Ministerial">
+          <img src="imagenes/Liderazgo.jpg" alt="Liderazgo Ministerial">
         </div>
         <div class="paso-contenido">
           <div class="paso-numero">5</div>
           <h3>Liderazgo Ministerial</h3>
         </div>
+        <div class="paso-flecha">
+          <svg viewBox="0 0 24 24">
+            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+          </svg>
+        </div>
       </div>
     </div>
 </section>
 <section class="doctrina-ministerial">
-    <h2 class="section-title">Nuestra <span>Doctrina Ministerial</span></h2>
+    <h2 class="section-title">Nuestra Doctrina</h2>
     
     <div class="doctrina-grid">
       <!-- Item 1 -->
@@ -398,12 +413,12 @@
     <div class="fundadores-info">
       <h2 class="fundadores-titulo">Nuestros Fundadores</h2>
       <h3 class="fundadores-nombres">Juan Mata y Yenny De Mata</h3>
-      <p class="fundadores-descripcion">Líderes espirituales y visionarios que han dedicado sus vidas a...</p>
+      <p class="fundadores-descripcion">Líderes espirituales y visionarios que han dedicado sus vidas al servicio en la obra del Señor</p>
     </div>
     <div class="fundadores-imagen">
       <img src="imagenes/Apóstol Juan Mata y Profeta Yenny De Mata.jpg" 
-           alt="Apóstol Juan Mata y Profeta Yenny De Mata" 
-           class="retrato-fundadores">
+          alt="Apóstol Juan Mata y Profeta Yenny De Mata" 
+          class="retrato-fundadores">
       <div class="decoracion"></div>
     </div>
   </div>
@@ -449,8 +464,8 @@
         <p><i class="fas fa-phone"></i> +58 123 456 7890</p>
         <p><i class="fas fa-envelope"></i> contacto@visiondefamilia.com</p>
         <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/16Ua86KBUe/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/viisiondefamilia?igsh=MWIxNzZkZW83cjllaw=="><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-youtube"></i></a>
           <a href="#"><i class="fab fa-whatsapp"></i></a>
         </div>
