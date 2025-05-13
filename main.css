@@ -18,8 +18,7 @@ body {
 .main-header {
   background-color: #121212;
   color: white;
-  padding: 10px 0;
-  position: fixed;
+ 
   width: 100%;
   top: 0;
   z-index: 1000;
@@ -28,22 +27,37 @@ body {
 
 .header-container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .logo{
-  display: inline-flex;
+  width: 20%;
   justify-content: center;
+  display: flex;
   align-items: center;
   color: #f8cf49;
 }
 
 .logo img {
   height: auto;
-  width: 60px;
+  width: 160px;
+}
+.portada-header{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px 0;
+}
+.h3{
+ 
+  text-align: center;
+  font-size: 30px;
+}
+h2{
+ 
+  font-size: 48px;
 }
 
 /* Menú principal (desktop) */
@@ -166,8 +180,8 @@ body {
 .hero-portada {
   position: relative;
   width: 100%;
-  height: 100vh;
-  min-height: 600px;
+  height: 80vh;
+  min-height: 80vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -217,7 +231,7 @@ body {
 .hero-content {
   position: relative;
   z-index: 3;
-  max-width: 800px;
+  max-width: 1000px;
   padding: 0 20px;
   color: #f8cf49;
 }
@@ -239,18 +253,22 @@ body {
 
 /* Estilos para la sección Quiénes Somos */
 .quienes-somos {
-  padding: 6rem 0;
-  background-color: #f9f9f9;
+background-color: #ffffff;
+padding: 10px 1rem;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+.container{
+  width: 100%;
+ background-color: #2ecc71;
+ display: flex;
+ flex-direction: column;
+}
+.quienes-somos-content{
+  background-color: #2ecc71;
 }
 
 .section-header {
-  text-align: center;
+ 
   margin-bottom: 3rem;
 }
 
@@ -279,7 +297,7 @@ body {
 }
 
 .texto-destacado {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto 3rem;
   text-align: center;
   font-size: 1.2rem;
@@ -805,17 +823,12 @@ footer {
 }
 
 /* Título de sección */
-.section-title {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 3rem;
-  text-transform: uppercase;
-  font-weight: 700;
-}
 
-.section-title span {
-  color: #e74c3c;
+.title-section{
+    font-size: 2.5rem;
+  color: #121212;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
 }
 
 /* Grid de objetivos */
@@ -1048,7 +1061,7 @@ footer {
 }
 /* Estilos generales */
 .doctrina-ministerial {
-  padding: 5rem 0;
+  
   background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ed 100%);
   font-family: 'Arial', sans-serif;
 }
@@ -1157,16 +1170,19 @@ footer {
 
 /* Sección de llamado a acción */
 .footer-cta {
-  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin-bottom: 3rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .footer-cta h3 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #f1c40f;
+  color: #000000;
   font-weight: 400;
 }
 
@@ -1292,4 +1308,28 @@ footer {
   .footer-cta h3 {
     font-size: 1.3rem;
   }
+}
+.redes{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0.7%;
+  top: 60%;
+z-index: 100;
+  width: 60px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+}
+.redes a{
+  font-size: 25px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #1776d4;
+  transition: all 0.3s ease;
+}
+.redes a:hover{
+  transform: scale(1.2);
 }
