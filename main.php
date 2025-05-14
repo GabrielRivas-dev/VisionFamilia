@@ -15,7 +15,7 @@
   <div class="header-container">
     <!-- Logo -->
     <div class="logo">
-      <a href="">
+      <a href="main.php">
         <img src="imagenes/logo.png" alt="Logo de la Iglesia">
       </a>
     </div>
@@ -89,13 +89,43 @@
   <div class="hero-content">
     <h1 class="hero-titulo">DIOS TE TRAJO AL MEJOR</h1>
     <p class="hero-subtitulo">Somos un ministerio apostólico y profetico fundamentado en la doctrina de los apostoles,guiado por el espiritu santo y comprometido con la expansion el reino de dios en la tierra</p>
+    <div class="botones">
+        <button>Conócenos</button>
+        <button>Contactar</button>
+      </div>
   </div>
 </section>
-
+<div class="secciones">
+  <div class="secciones-card">
+    <div class="doctrina-icon">🕊️</div>
+    <h3>Presencia de dios</h3>
+    <span>Buscamos una relacion intima con el espiritu santo</span>
+  </div>
+  <div class="secciones-card">
+    <div class="doctrina-icon">📖</div>
+    <h3>Palabra viva</h3>
+    <span>La biblia es nuestro fundamento y guía</span>
+  </div>
+  <div class="secciones-card">
+    <div class="doctrina-icon">💟</div>
+    <h3>Servicio con amor</h3>
+    <span>Servimos al projimo con el amor de dios</span>
+  </div>
+  <div class="secciones-card">
+    <div class="doctrina-icon">🏠</div>
+    <h3>Familias restauradas</h3>
+    <span>Trabajamos en la unidad y sanidad familiar</span>
+  </div>
+  <div class="secciones-card">
+    <div class="doctrina-icon">👑</div>
+    <h3>Gran Comision</h3>
+    <span>Evangelizamos y disputamos para multiplicar el reino</span>
+  </div>
+</div>
 <!-- Sección Quiénes Somos con diseño moderno -->
 <section class="quienes-somos" id="quienes-somos">
  <div class="section-header">
-        <h2 class="section-titulo">¿Quiénes somos?</h2>
+        <h2 class="section-title" style="color:#F9F5F0;">¿Quiénes somos?</h2>
       </div>
       <div class="texto-destacado">
         <p>Somos un ministerio apostólico y profético que emerge del corazón de Dios con el propósito de transformar familias, siguiendo el principio establecido por Dios a Abraham en su palabra: "Y en ti serán benditas todas las naciones de la tierra" (Génesis 12:3). Estamos fundamentados en la doctrina de los apóstoles y en la predicación del evangelio, bajo la dirección del Apóstol Juan Carlo Mata y la Profeta Yenny de Mata, junto a un equipo de pastores y líderes comprometidos.</p>
@@ -151,7 +181,7 @@
   </div>
   </div>
   <section class="objetivos-section">
-    <h2 class="title-section">NUESTROS OBJETIVOS</h2>
+    <h2 class="section-title">Nuestros objetivos</h2>
     <div class="objetivos-grid">
       <!-- Objetivo 1 -->
       <div class="objetivo-card">
@@ -179,8 +209,11 @@
     </div>
 </section>
 <section class="doctrina-ministerial">
+  <div class="section-header">
     <h2 class="section-title">Nuestra Doctrina</h2>
-    
+  </div>
+  
+  <div class="doctrina-grid-container">
     <div class="doctrina-grid">
       <!-- Item 1 -->
       <div class="doctrina-card">
@@ -229,23 +262,37 @@
         <p class="doctrina-text">Unidad en la diversidad de miembros</p>
         <p class="bible-verse">1 Corintios 12:13</p>
       </div>
-      
-      <!-- Item 7 -->
-      <div class="doctrina-card">
-        <div class="doctrina-icon">💧</div>
-        <h3>Un solo bautismo</h3>
-        <p class="doctrina-text">Símbolo de identificación con Cristo</p>
-        <p class="bible-verse">Efesios 4:5</p>
-      </div>
-      
-      <!-- Item 8 -->
-      <div class="doctrina-card">
-        <div class="doctrina-icon">💰</div>
-        <h3>Riqueza en Cristo</h3>
-        <p class="doctrina-text">Bendición espiritual y provisión divina</p>
-        <p class="bible-verse">1 Tesalonicenses 4:6-11</p>
-      </div>
     </div>
+  </div>
+</section>
+<section class="proyecto-vida">
+  <div class="proyecto-container">
+<div class="proyecto-foto-principal"><img src="imagenes/pastor y profeta1.jpg" alt=""> </div>
+<div class="proyecto-foto-secundarias">
+<div class="fotos-secundarias"> <img src="imagenes/profeta1.jpg" alt=""></div>
+<div class="fotos-secundarias"> <img src="imagenes/pastor1.jpg" alt=""></div>
+<div class="fotos-secundarias"> <img src="imagenes/canto1.jpg" alt=""></div></div>
+<div class="proyecto-texto">
+  <h3>Participa en nuestro</h3> 
+  <h2>Proyecto de vida</h2>
+  <h3>Alcanzando generaciones</h3>
+  <br>
+  <h3>Evangelismos</h3>
+  <ul>
+    <li>Hogar Cristiano Multiplicador</li>
+    <li>Cafe con Jesus</li>
+    <li>Cine en familia</li>
+    <li>Obras sociales</li>
+    <li>Actividades deportivas</li>
+    <li>Adoracion publica</li>
+    <li>Nacimiento del nuevo ser</li>
+    <li>Seminarios</li>
+    <li>Ayunos</li>
+    <li>Vigilias</li>
+    <li>Matutinos</li>
+  </ul>
+</div>
+</div>
 </section>
 <section class="camino-vision">
     <h2 class="section-title">ACOMPÁÑANOS AL <span>CAMINO DE LA VISIÓN</span></h2>
@@ -310,49 +357,50 @@
 <section class="departamentos">
     <a href="url_de_la_pagina_registro" class="depto-img">
         <article>
-            <img src="ruta_imagen_registro.jpg" alt="Registro y seguimiento">
+            <img src="imagenes_departamentos/logoREGISTRO.png" alt="Registro y seguimiento">
         </article>
     </a>
     
     <a href="url_de_la_pagina_medios" class="depto-img">
         <article>
-            <img src="imagenes_departamentos/UnidadMediosAudiovisuales.jpg" alt="Unidad de medios audiovisuales">
+            <img src="imagenes_departamentos/logoAUDIOVISUALES.PNG " alt="Unidad de medios audiovisuales">
         </article>
     </a>
     
     <a href="url_de_la_pagina_protocolo" class="depto-img">
         <article>
-            <img src="ruta_imagen_protocolo.jpg" alt="Protocolo">
+            <img src="imagenes_departamentos/logoPROTOCOLO.png " alt="Protocolo">
         </article>
     </a>
     
-    <a href="url_de_la_pagina_visionarios" class="depto-img">
-        <article>
-            <img src="ruta_imagen_visionarios.jpg" alt="Visionarios">
-        </article>
-    </a>
     
     <a href="url_de_la_pagina_kids" class="depto-img">
         <article>
-            <img src="imagenes_departamentos/VDFKids.jpg" alt="VDG Kid's">
+            <img src="imagenes_departamentos/logoVFKIDS.PNG " alt="VDG Kid's">
         </article>
     </a>
     
     <a href="url_de_la_pagina_danza" class="depto-img">
         <article>
-            <img src="imagenes_departamentos/Danza.png" alt="Danza">
+            <img src="imagenes_departamentos/logoDANZA.png " alt="Danza">
+        </article>
+    </a>
+
+    <a href="url_de_la_pagina_visionarios" class="depto-img">
+        <article>
+            <img src="imagenes_departamentos/logoLIDERES.png " alt="Visionarios">
         </article>
     </a>
     
     <a href="url_de_la_pagina_adoracion" class="depto-img">
         <article>
-            <img src="imagenes_departamentos/Adoración.jpg" alt="Adoración">
+            <img src="imagenes_departamentos/logoADORACION.PNG " alt="Adoración">
         </article>
     </a>
     
     <a href="url_de_la_pagina_escuela" class="depto-img">
         <article>
-            <img src="ruta_imagen_escuela.jpg" alt="Escuela de la visión">
+            <img src="imagenes_departamentos/logoESCUELA.png " alt="Escuela de la visión">
         </article>
     </a>
 </section>
@@ -368,44 +416,46 @@
     <!-- Sección de información -->
     <div class="footer-info">
       <!-- Columna de ubicación -->
+       <div class="footer-column">
+         <div class="logo">
+      <a href="main.php">
+        <img src="imagenes/logo.png" alt="Logo de la Iglesia">
+      </a>
+    </div>
+       </div>
       <div class="footer-column">
-        <h4>UBICACIÓN</h4>
         <address>
+          <h4>UBICACIÓN</h4>
           Av. 23 de Enero con Av. Las Samanes<br>
-          Edificio Autocontrol<br>
-          Barquisimeto, Sector La Federación<br>
-          Barquisimeto, Venezuela
+          Edificio Autocentro<br>
+          Barinas, Sector La Federación<br>
+          Barinas, Venezuela
         </address>
       </div>
-      
+      <div class="footer-column">
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.123456789!2d-70.2251667!3d8.6229444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMzcnMjIuNiJOIDcwwrAxMyczMC42Ilc!5e0!3m2!1ses!2sve!4v1620000000000!5m2!1ses!2sve"
+      width="300" 
+      height="auto" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy"
+      aria-label="Mapa de ubicación de la iglesia">
+    </iframe>
+     <a href="https://www.google.com/maps/place/8%C2%B037'22.6%22N+70%C2%B013'30.6%22W/@8.6229444,-70.2251667,17z/data=!3m1!4b1!4m4!3m3!8m2!3d8.6229444!4d-70.2251667"
+         target="_blank" 
+         class="mapa-boton">
+        <i class="fas fa-directions"></i> Abrir en Google Maps
+      </a>
+      </div>
       <!-- Columna de donaciones -->
       <div class="footer-column">
         <h4>DONACIONES</h4>
-        <p>2 Corintios 9:10</p>
-        <div class="payment-methods">
-          <p>Métodos de pago:</p>
-          <div class="payment-icons">
-            <span class="payment-icon">💳</span>
-            <span class="payment-icon">🏦</span>
-            <span class="payment-icon">📱</span>
-          </div>
-        </div>
+        <p>Dios provee tanto la semilla para sembrar como el pan para come</p>
+        
       </div>
-      
-      <!-- Columna de contacto -->
-      <div class="footer-column">
-        <h4>CONTACTO</h4>
-        <p><i class="fas fa-phone"></i> +58 123 456 7890</p>
-        <p><i class="fas fa-envelope"></i> contacto@visiondefamilia.com</p>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/share/16Ua86KBUe/"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/viisiondefamilia?igsh=MWIxNzZkZW83cjllaw=="><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-whatsapp"></i></a>
-        </div>
-      </div>
+   
     </div>
-    
     <!-- Derechos de autor -->
     <div class="footer-bottom">
       <p>&copy; 2023 Visión de Familia. Todos los derechos reservados.</p>

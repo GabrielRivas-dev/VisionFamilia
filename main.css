@@ -9,14 +9,14 @@
 
 body {
   line-height: 1.8;
-  background-color: #f8f9fa;
+  background-color: #54162b;
   color: #333;
   font-family: 'Montserrat', sans-serif;
 }
 
 /* Estilos del header */
 .main-header {
-  background-color: #121212;
+background-image: linear-gradient(180deg, rgba(84, 22, 43, 1) 0%, rgba(142, 44, 62, 1) 100%);
   color: white;
  
   width: 100%;
@@ -49,6 +49,23 @@ body {
   flex-direction: column;
 
   padding: 10px 0;
+}
+.botones button {
+  background-color: #F8CF49;
+  color: rgb(0, 0, 0);
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+
+.botones button:hover {
+  background-color: #ecdca6;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
 }
 .h3{
  
@@ -180,8 +197,8 @@ h2{
 .hero-portada {
   position: relative;
   width: 100%;
-  height: 80vh;
-  min-height: 80vh;
+  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -223,7 +240,7 @@ h2{
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(46, 12, 24, 0.4);
   z-index: 2;
 }
 
@@ -253,18 +270,14 @@ h2{
 
 /* Estilos para la sección Quiénes Somos */
 .quienes-somos {
-background-color: #ffffff;
+color: white;
 padding: 10px 1rem;
 }
 
 .container{
   width: 100%;
- background-color: #2ecc71;
  display: flex;
  flex-direction: column;
-}
-.quienes-somos-content{
-  background-color: #2ecc71;
 }
 
 .section-header {
@@ -283,17 +296,9 @@ padding: 10px 1rem;
 
 .section-titulo {
   font-size: 2.5rem;
-  color: #2c3e50;
+  color: #ffffff;
   margin-bottom: 1.5rem;
   position: relative;
-}
-
-.divisor {
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(to right, #e67e22, #f39c12);
-  margin: 0 auto;
-  border-radius: 2px;
 }
 
 .texto-destacado {
@@ -302,7 +307,7 @@ padding: 10px 1rem;
   text-align: center;
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #555;
+  color: hsl(0, 0%, 98%);
 }
 
 .columnas-container {
@@ -374,40 +379,6 @@ padding: 10px 1rem;
   }
 }
 
-/* Qué Hacemos */
-.que-hacen {
-  background: #fff;
-}
-
-.que-hacen .div1, .que-hacen .div2 {
-  flex: 1;
-  padding: 2rem;
-}
-
-.que-hacen .div1 img {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.que-hacen .div1 img:hover {
-  transform: translateY(-5px);
-}
-
-.que-hacen article {
-  background: #fff;
-  border-left: 4px solid #e74c3c;
-  margin-bottom: 1.5rem;
-  padding: 1.5rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-}
-
-.que-hacen article:hover {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  transform: translateX(5px);
-}
 
 /* SECCIÓN DEPARTAMENTOS - ESTILO VISUAL */
 .departamentos {
@@ -532,6 +503,7 @@ padding: 10px 1rem;
   font-weight: 700;
 }
 
+
 .fundadores-descripcion {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -629,7 +601,7 @@ padding: 10px 1rem;
 
 .responsables .section img {
   width: 100%;
-  height: 180px;
+  height: auto;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -637,7 +609,7 @@ padding: 10px 1rem;
 .responsables .section h2 {
   margin: 10px 0;
   font-size: 1.2rem;
-  color: #2c3e50;
+  color: #8E2C3E;
 }
 
 @keyframes scroll {
@@ -811,8 +783,10 @@ footer {
 }
 /* Estilos generales */
 .objetivos-section {
-  padding: 4rem 0;
-  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0;
+  background-color: #F9F5F0;
   font-family: 'Arial', sans-serif;
 }
 
@@ -826,7 +800,7 @@ footer {
 
 .title-section{
     font-size: 2.5rem;
-  color: #121212;
+  color: #ffffff;
   margin-bottom: 3rem;
   margin-left: 2rem;
 }
@@ -895,9 +869,11 @@ footer {
 }
 /* Estilos generales */
 .camino-vision {
-  padding: 4rem 0;
-  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0;
   font-family: 'Arial', sans-serif;
+  background-color: #F9F5F0;
 }
 
 .container {
@@ -907,10 +883,10 @@ footer {
 }
 
 /* Título de sección */
-.section-title {
+.camino-vision .section-title, .objetivos-section .section-title, .doctrina-ministerial .section-title {
   text-align: center;
   font-size: 2.2rem;
-  color: #333;
+  color: #2D2D30;
   margin-bottom: 3rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -918,41 +894,48 @@ footer {
 }
 
 .section-title span {
-  color: #e74c3c;
+  color: #B44A5C;
   display: block;
   font-size: 2.5rem;
   margin-top: 0.5rem;
 }
 
 /* Contenedor de pasos */
+/* Contenedor principal - ahora horizontal */
 .pasos-container {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  max-width: 800px;
+  flex-direction: row; /* Cambiado a fila */
+  gap: 1.5rem;
+  max-width: 100%;
   margin: 0 auto;
+  padding: 1rem;
 }
 
-/* Tarjetas de pasos */
+
+/* Tarjetas de pasos - diseño horizontal */
 .paso-card {
   display: flex;
-  align-items: center;
+  flex-direction: column; /* Cambio a columna para mejor disposición */
+  min-width: 280px; /* Ancho mínimo para cada card */
   background: white;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  scroll-snap-align: start; /* Snap al hacer scroll */
   position: relative;
-  transition: transform 0.3s ease;
+  flex-shrink: 0; /* Evita que se reduzcan */
 }
 
 .paso-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
 }
 
+/* Contenedor de imagen superior */
 .paso-imagen {
-  width: 150px;
-  height: 150px;
-  flex-shrink: 0;
+  width: 100%;
+  height: 180px;
   overflow: hidden;
 }
 
@@ -964,19 +947,27 @@ footer {
 }
 
 .paso-card:hover .paso-imagen img {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
+/* Contenido de la card */
 .paso-contenido {
-  flex-grow: 1;
   padding: 1.5rem;
   display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Encabezado con número */
+.paso-header {
+  display: flex;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .paso-numero {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   background-color: #e74c3c;
   color: white;
   border-radius: 50%;
@@ -984,118 +975,134 @@ footer {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  font-size: 1.2rem;
-  margin-right: 1.5rem;
+  font-size: 1.1rem;
+  margin-right: 1rem;
   flex-shrink: 0;
 }
 
 .paso-contenido h3 {
-  font-size: 1.3rem;
-  color: #2c3e50;
+  font-size: 1.25rem;
+  color: #000000;
   margin: 0;
   font-weight: 600;
+  line-height: 1.3;
 }
 
+/* Eliminamos la flecha entre cards */
 .paso-flecha {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #e74c3c;
-  margin: 0 1rem;
-  flex-shrink: 0;
+  display: none;
 }
 
-.paso-flecha svg {
-  width: 30px;
-  height: 30px;
-}
-
-/* Línea conectadora */
+/* Eliminamos la línea conectadora */
 .paso-card:not(:last-child)::after {
+  display: none;
+}
+
+/* Efecto de borde al hover */
+.paso-card::before {
   content: '';
   position: absolute;
-  bottom: -2rem;
-  left: 75px;
-  width: 2px;
-  height: 2rem;
-  background-color: #e74c3c;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #e74c3c, #f39c12);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.paso-card:hover::before {
+  opacity: 1;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .section-title {
-    font-size: 1.8rem;
-  }
-  
-  .section-title span {
-    font-size: 2rem;
+  .pasos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
   }
   
   .paso-card {
-    flex-direction: column;
-    align-items: stretch;
+    min-width: 85vw; /* Ocupa casi todo el ancho en móviles */
+    margin-right: 1rem;
   }
   
   .paso-imagen {
-    width: 100%;
-    height: 200px;
+    height: 150px;
   }
   
   .paso-contenido {
     padding: 1.2rem;
   }
-  
-  .paso-flecha {
-    margin: 1rem auto;
-    transform: rotate(90deg);
+}
+
+@media (min-width: 1024px) {
+  .pasos-container {
+    flex-wrap: wrap; /* En pantallas grandes, puede envolver */
+    justify-content: center;
+    overflow-x: visible;
   }
   
-  .paso-card:not(:last-child)::after {
-    left: 50%;
-    bottom: -1rem;
-    height: 1rem;
-    width: 2px;
+  .paso-card {
+    flex: 0 0 calc(33.333% - 1.5rem); /* 3 columnas */
+    min-width: auto;
   }
 }
 /* Estilos generales */
 .doctrina-ministerial {
-  
-  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ed 100%);
-  font-family: 'Arial', sans-serif;
-}
-
-.container {
-  max-width: 1200px;
+  padding: 3rem 1rem;
+  position: relative;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
+  background-color: #F9F5F0;
 }
 
-/* Título de sección */
-.section-title {
+.section-header {
   text-align: center;
-  font-size: 2.5rem;
-  color: #2c3e50;
-  margin-bottom: 3rem;
-  font-weight: 700;
+  margin-bottom: 2.5rem;
 }
 
-.section-title span {
-  color: #e74c3c;
+.section-title {
+  font-size: 2.2rem;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #ae7dac, #f3dadf);
+}
+
+/* Contenedor del grid */
+.doctrina-grid-container {
+  width: 100%;
+  overflow: hidden;
 }
 
 /* Grid de doctrinas */
 .doctrina-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 0 auto;
 }
 
 /* Tarjetas de doctrina */
 .doctrina-card {
+  flex: 1 0 280px; /* Crece, no encoge, base 280px */
+  max-width: 320px;
   background: white;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 2rem;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
@@ -1104,17 +1111,23 @@ footer {
 }
 
 .doctrina-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
 }
 
 .doctrina-icon {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.doctrina-card:hover .doctrina-icon {
+  transform: scale(1.1);
 }
 
 .doctrina-card h3 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #2c3e50;
   margin-bottom: 1rem;
   font-weight: 600;
@@ -1124,7 +1137,7 @@ footer {
   color: #555;
   line-height: 1.6;
   margin-bottom: 1.5rem;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 .bible-verse {
@@ -1132,31 +1145,35 @@ footer {
   color: #7f8c8d;
   font-size: 0.9rem;
   margin-top: 1rem;
+  display: block;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 2rem;
-  }
-  
-  .doctrina-grid {
-    grid-template-columns: 1fr 1fr;
+@media (max-width: 1200px) {
+  .doctrina-card {
+    flex-basis: calc(33.333% - 1.5rem);
   }
 }
 
-@media (max-width: 480px) {
-  .doctrina-grid {
-    grid-template-columns: 1fr;
+@media (max-width: 900px) {
+  .doctrina-card {
+    flex-basis: calc(50% - 1.5rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .doctrina-card {
+    flex-basis: 100%;
+    max-width: 100%;
   }
   
-  .doctrina-card {
-    padding: 1.5rem;
+  .section-title {
+    font-size: 1.8rem;
   }
 }
 /* Estilos del footer */
 .site-footer {
-  background-color: #121212;
+  background-image: linear-gradient(0deg, rgba(84, 22, 43, 1) 0%, rgba(142, 44, 62, 1) 100%);
   color: #ecf0f1;
   padding: 3rem 0 0;
   font-family: 'Arial', sans-serif;
@@ -1182,14 +1199,14 @@ footer {
 .footer-cta h3 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #000000;
+  color: #ffffff;
   font-weight: 400;
 }
 
 .contact-btn {
   display: inline-block;
-  background-color: #e74c3c;
-  color: white;
+  background-color: #F8CF49;
+  color: rgb(0, 0, 0);
   padding: 12px 30px;
   border-radius: 50px;
   text-decoration: none;
@@ -1201,7 +1218,7 @@ footer {
 }
 
 .contact-btn:hover {
-  background-color: #c0392b;
+  background-color: #f0d98d;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
 }
@@ -1218,7 +1235,11 @@ footer {
 .footer-column {
   flex: 1;
   min-width: 250px;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-column h4 {
@@ -1229,15 +1250,7 @@ footer {
   padding-bottom: 10px;
 }
 
-.footer-column h4::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 50px;
-  height: 2px;
-  background-color: #e74c3c;
-}
+
 
 .footer-column address, 
 .footer-column p {
@@ -1332,4 +1345,179 @@ z-index: 100;
 }
 .redes a:hover{
   transform: scale(1.2);
+}
+/* Estilos para el mapa */
+.mapa-container {
+  padding: 3rem 1rem;
+  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mapa-titulo {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.mapa-titulo::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #e74c3c;
+  margin: 0.5rem auto 0;
+}
+
+.mapa-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.mapa-wrapper iframe {
+  flex: 1;
+  min-width: 300px;
+  min-height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.mapa-direccion {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.mapa-direccion h3 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f1c40f;
+}
+
+.mapa-direccion address p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.mapa-direccion i {
+  color: #e74c3c;
+  margin-right: 1rem;
+  width: 20px;
+  text-align: center;
+}
+
+.mapa-boton {
+  display: inline-flex;
+  align-items: center;
+  background-color: #F8CF49;
+  color: rgb(0, 0, 0);
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.mapa-boton:hover {
+  background-color: #f5db88;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
+.mapa-boton i {
+  color: rgb(0, 0, 0);
+  margin-right: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mapa-wrapper {
+    flex-direction: column;
+  }
+  
+  .mapa-wrapper iframe,
+  .mapa-direccion {
+    width: 100%;
+  }
+  
+  .mapa-titulo {
+    font-size: 1.8rem;
+  }
+}
+.proyecto-container {
+  padding: 1rem 0;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 16px;
+grid-row-gap: 7px;
+color: white;
+}
+
+.proyecto-foto-principal { 
+  grid-area: 1 / 1 / 3 / 2; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  .proyecto-foto-principal img{
+    width: auto;
+    height: 600px;
+    border-radius: 20%;
+  }
+.proyecto-foto-secundarias{ 
+  grid-area: 3 / 1 / 4 / 2;
+display: inline-flex;
+gap: 5px;
+justify-content: center;
+align-items: center;
+height: 210px;
+}
+.fotos-secundarias img{
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+}
+.proyecto-texto { 
+  grid-area: 1 / 2 / 4 / 3; 
+  padding: 3rem;
+}
+.proyecto-texto h3{
+  font-size: 30px;
+}
+.proyecto-texto h2{
+  font-size: 40px;
+}
+.proyecto-texto ul {
+  font-size: 24px;
+}
+.secciones{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 3rem;
+  gap: 10px;
+}
+.secciones-card{
+ text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #F9F5F0;
+  padding: 0 10px;
+  border-radius: 20px;
+  border: 1px solid black;
 }
