@@ -436,13 +436,13 @@
 
       <a href="url_de_la_pagina_diseño_ambiente" class="depto-img">
         <article>
-          <img src="imagenes_departamentos/logoDISEÑOyAMBIENTE.PNG " alt="Diseño y Ambiente">
+          <img src="imagenes_departamentos/logoDISEÑOyAMBIENTE.png " alt="Diseño y Ambiente">
         </article>
       </a>
 
       <a href="url_de_la_pagina_operaciones" class="depto-img">
         <article>
-          <img src="imagenes_departamentos/logoOPERACIONES.PNG " alt="Operaciones">
+          <img src="imagenes_departamentos/logoOPERACIONES.png " alt="Operaciones">
         </article>
       </a>
 
