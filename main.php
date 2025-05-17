@@ -32,7 +32,22 @@
             <ul>
               <li><a href="#">Inicio</a></li>
               <li><a href="nosotros.php">Nosotros</a></li>
-              <li><a href="#">Ministerios</a></li>
+              <li><a href="#" id="ministerios-link">Ministerios</a>
+            <div class="dropdown-content" id="dropdown-content">
+        <a href="#">Adoración</a>
+        <a href="#">Amor y Misericordia</a>
+        <a href="#">Diseño y Ambiente</a>
+        <a href="#">Danza</a>
+        <a href="#">Intercesión</a>
+        <a href="#">Operaciones</a>
+        <a href="#">Protocolo</a>
+        <a href="#">Registro y Seguimiento</a>
+        <a href="#">UMAV</a>
+        <a href="#">VDF KIDS</a>
+        <a href="#">Escuela de la Visión</a>
+        <a href="#">Evangelismo</a>
+      </div>
+            </li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Contacto</a></li>
             </ul>
@@ -62,7 +77,7 @@
       <nav class="mobile-nav">
         <ul>
           <li><a href="#">Inicio</a></li>
-          <li><a href="#">Nosotros</a></li>
+          <li><a href="nosotros.php">Nosotros</a></li>
           <li><a href="#">Ministerios</a></li>
           <li><a href="#">Eventos</a></li>
           <li><a href="#">Contacto</a></li>

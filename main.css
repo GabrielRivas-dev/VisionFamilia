@@ -47,8 +47,16 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-
     padding: 10px 0;
+  }
+  .h3{
+  
+    text-align: center;
+    font-size: 30px;
+  }
+  .h2{
+  
+    font-size: 48px;
   }
   .botones button {
     background-color: #F8CF49;
@@ -67,15 +75,7 @@
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
   }
-  .h3{
   
-    text-align: center;
-    font-size: 30px;
-  }
-  h2{
-  
-    font-size: 48px;
-  }
 
   /* Menú principal (desktop) */
   .main-nav ul {
@@ -183,13 +183,22 @@
 
   /* Responsive */
   @media (max-width: 768px) {
-    .main-nav {
-      display: none;
-    }
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .logo, .portada-header {
+        width: 100%;
+      }
+      .h2 {
+        font-size: 36px;
+      }
+      .h3 {
+        font-size: 24px;
+      }
     
-    .menu-toggle {
-      display: block;
-    }
+    
+    
   }
 
   /* --- Portada --- */
@@ -1078,7 +1087,7 @@
   }
   /* Estilos generales */
   .doctrina-ministerial {
-    padding: 3rem 1rem;
+    padding: 0.5rem 3rem 1rem;
     position: relative;
     max-width: 1400px;
     margin: 0 auto;
@@ -1366,7 +1375,7 @@
     font-size: 25px;
     text-decoration: none;
     cursor: pointer;
-    color: #1776d4;
+    color: #54162b;
     transition: all 0.3s ease;
   }
   .redes a:hover{
@@ -1504,6 +1513,7 @@
       width: auto;
       height: 600px;
       border-radius: 20%;
+      border: 2px solid #f8cf49;
     }
   .proyecto-foto-secundarias{ 
     grid-area: 3 / 1 / 4 / 2;
@@ -1517,10 +1527,12 @@
     width: 200px;
     height: 200px;
     border-radius: 20%;
+    border: 2px solid #f8cf49;
   }
   .proyecto-texto { 
     grid-area: 1 / 2 / 4 / 3; 
     padding: 3rem;
+    padding-bottom: 0;
   }
   .proyecto-texto h3{
     font-size: 30px;
@@ -1695,4 +1707,67 @@
       transform: translateY(0);
     }
   }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #54162b;
+  max-height: 50vh;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 102;
+  border-radius: 0 0 8px 8px;
+  overflow-y:auto;
+}
+
+.dropdown-content a {
+  color: var(--color-primary-dark);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  animation: fadeIn 0.3s;
+}
+
+/* Icono del dropdown */
+.dropdown i {
+  margin-left: 5px;
+  font-size: 0.8em;
+  transition: transform 0.3s;
+}
+
+.dropdown:hover i {
+  transform: rotate(180deg);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  
+  .dropdown-content a {
+    padding: 10px 20px;
+  }
+}

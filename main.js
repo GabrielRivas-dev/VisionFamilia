@@ -1,3 +1,20 @@
+const enlace = document.getElementById("ministerios-link");
+    const miDiv = document.getElementById("dropdown-content");
+
+    // Mostrar el div al hacer clic en el enlace
+    enlace.addEventListener("click", function(e) {
+      e.preventDefault(); // Evita el comportamiento predeterminado del enlace
+      miDiv.style.display = "block";
+    });
+
+    // Ocultar el div al hacer clic fuera
+    document.addEventListener("click", function(e) {
+      if (e.target !== miDiv && e.target !== enlace) {
+        miDiv.style.display = "none";
+      }
+    });
+
+    
 document.addEventListener('DOMContentLoaded', function () {
   const menuToggle = document.querySelector('.menu-toggle');
   const mobileNav = document.querySelector('.mobile-nav');
