@@ -9,7 +9,7 @@
 
   body {
     line-height: 1.8;
-    background-color: #54162b;
+    background-color: rgba(142, 44, 62, 1);
     color: #333;
     font-family: 'Montserrat', sans-serif;
   }
@@ -422,7 +422,7 @@
     gap: 2.5rem;
     padding: 3rem 5%;
     place-items: center;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
   }
 
@@ -505,7 +505,7 @@
   /* Estilos generales */
   .fundadores-container {
     padding: 4rem 2rem;
-    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ed 100%);
+    background-color: rgba(142, 44, 62, 1);
   }
 
   .fundadores {
@@ -526,14 +526,14 @@
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #6c757d;
+    color: #f7dddd;
     margin-bottom: 1rem;
   }
 
   .fundadores-nombres {
     font-size: 2.5rem;
     line-height: 1.2;
-    color: #2c3e50;
+    color: #ffffff;
     margin-bottom: 1.5rem;
     font-weight: 700;
   }
@@ -542,7 +542,7 @@
   .fundadores-descripcion {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #495057;
+    color: #fceeee;
     margin-bottom: 2rem;
   }
 
@@ -708,8 +708,8 @@
 
   /* Estilos para sección paralela */
   .vision-mision-paralela {
-    padding: 4rem 0;
-    background: #f8f9fa;
+    padding: 3rem 0;
+    background: rgba(142, 44, 62, 1);
   }
 
   .vm-container {
@@ -722,7 +722,7 @@
 
   .vm-card {
     flex: 1;
-    background: white;
+    background: #F9F5F0;
     border-radius: 12px;
     padding: 2.5rem;
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
@@ -754,7 +754,7 @@
 
   .vm-card h3 {
     font-size: 1.5rem;
-    color: #2c3e50;
+    color: #000000;
     text-align: center;
     margin-bottom: 1.5rem;
     position: relative;
@@ -772,7 +772,7 @@
   }
 
   .vm-content {
-    color: #555;
+    color: #292828;
     line-height: 1.7;
     text-align: center;
   }
@@ -791,19 +791,19 @@
 
   /* Colores diferenciados */
   .mision-card .vm-icon {
-    background: linear-gradient(135deg, #3498db 0%, #2ecc71 100%);
+    background: linear-gradient(135deg, #8f2828 0%, #f34f4f 100%);
   }
 
   .mision-card h3::after {
-    background: #3498db;
+    background: #8f2828;
   }
 
   .vision-card .vm-icon {
-    background: linear-gradient(135deg, #e74c3c 0%, #e67e22 100%);
+    background: linear-gradient(135deg, #f34f4f 0%, #8f2828 100%);
   }
 
   .vision-card h3::after {
-    background: #e74c3c;
+    background: #f34f4f;
   }
 
   /* Responsive */
@@ -1725,7 +1725,7 @@
 }
 
 .dropdown-content a {
-  color: var(--color-primary-dark);
+     color: #f8cf49;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -1770,4 +1770,20 @@
   .dropdown-content a {
     padding: 10px 20px;
   }
+}
+.galeria-imagenes img{
+  object-fit: cover;
+  object-position: center;
+}
+.biografia-iglesia, .biografia-fundadores{
+background-color:#F9F5F0 ;
+}
+.biografia-contenido{
+   background: rgba(142, 44, 62, 1);
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }

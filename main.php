@@ -433,7 +433,7 @@
 
       <a href="url_de_la_pagina_visionarios" class="depto-img">
         <article>
-          <img src="imagenes_departamentos/logoLIDERES.png " alt="Visionarios">
+          <img src="imagenes_departamentos/logoLIDERES.png" alt="Visionarios">
         </article>
       </a>
 
@@ -458,6 +458,18 @@
       <a href="url_de_la_pagina_operaciones" class="depto-img">
         <article>
           <img src="imagenes_departamentos/logoOPERACIONES.png " alt="Operaciones">
+        </article>
+      </a>
+
+       <a href="url_de_la_pagina_intercesion" class="depto-img">
+        <article>
+          <img src="imagenes_departamentos/logoINTERSICION.png " alt="intercesion">
+        </article>
+      </a>
+
+       <a href="url_de_la_pagina_amor_y_misericordia" class="depto-img">
+        <article>
+          <img src="imagenes_departamentos/logoAMOR.png " alt="amor y misericordia">
         </article>
       </a>
 

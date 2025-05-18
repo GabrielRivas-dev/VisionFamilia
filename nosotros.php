@@ -32,7 +32,22 @@
             <ul>
               <li><a href="main.php">Inicio</a></li>
               <li><a href="#">Nosotros</a></li>
-              <li><a href="#">Ministerios</a></li>
+             <li><a href="#" id="ministerios-link">Ministerios</a>
+            <div class="dropdown-content" id="dropdown-content">
+        <a href="#">Adoración</a>
+        <a href="#">Amor y Misericordia</a>
+        <a href="#">Diseño y Ambiente</a>
+        <a href="#">Danza</a>
+        <a href="#">Intercesión</a>
+        <a href="#">Operaciones</a>
+        <a href="#">Protocolo</a>
+        <a href="#">Registro y Seguimiento</a>
+        <a href="#">UMAV</a>
+        <a href="#">VDF KIDS</a>
+        <a href="#">Escuela de la Visión</a>
+        <a href="#">Evangelismo</a>
+      </div>
+            </li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Contacto</a></li>
             </ul>
@@ -131,9 +146,9 @@
   <!-- Sección Biografía de la Iglesia -->
   <section class="biografia-iglesia">
     <div class="biografia-contenido">
-      <h2>Biografía de la Iglesia</h2>
-      <p>El Ministerio Apostólico y Profético Visión Familia nació en el corazón de Dios con el propósito de restaurar hogares, levantar líderes comprometidos con la Palabra y extender el Reino de Dios en Barinas y más allá.</p>
-      <p>Desde sus inicios, ha sido un faro de fe, esperanza y transformación, enfocado en la enseñanza apostólica, el desarrollo espiritual y la formación de nuevas generaciones en los caminos del Señor.</p>
+      <h2 style="color:white;">Biografía de la Iglesia</h2>
+      <p style="color:white;">El Ministerio Apostólico y Profético Visión Familia nació en el corazón de Dios con el propósito de restaurar hogares, levantar líderes comprometidos con la Palabra y extender el Reino de Dios en Barinas y más allá.</p>
+      <p style="color:white;">Desde sus inicios, ha sido un faro de fe, esperanza y transformación, enfocado en la enseñanza apostólica, el desarrollo espiritual y la formación de nuevas generaciones en los caminos del Señor.</p>
     </div>
     <div class="galeria-imagenes">
       <img src="imagenes/cultos.jpg" alt="Primera reunión">
@@ -145,13 +160,13 @@
   <!-- Sección Biografía de los Fundadores Extendida -->
   <section class="biografia-fundadores">
     <div class="biografia-contenido">
-      <h2>Biografía de los Fundadores</h2>
-      <p>El Apóstol Juan Mata y la Profeta Yenny De Mata fueron llamados al ministerio desde temprana edad. Unidos por el propósito divino, han caminado en obediencia al Señor, estableciendo Visión Familia como un ministerio de impacto.</p>
-      <p>Su ministerio ha tocado incontables vidas a través de la palabra profética, la intercesión, y la formación de discípulos. Con pasión, amor y entrega, han sido instrumentos de restauración en matrimonios, familias y generaciones.</p>
+      <h2 style="color:white;">Biografía de los Fundadores</h2>
+      <p style="color:white;">El Apóstol Juan Mata y la Profeta Yenny De Mata fueron llamados al ministerio desde temprana edad. Unidos por el propósito divino, han caminado en obediencia al Señor, estableciendo Visión Familia como un ministerio de impacto.</p>
+      <p style="color:white;">Su ministerio ha tocado incontables vidas a través de la palabra profética, la intercesión, y la formación de discípulos. Con pasión, amor y entrega, han sido instrumentos de restauración en matrimonios, familias y generaciones.</p>
     </div>
     <div class="galeria-imagenes">
       <img src="imagenes/Fundadores.jpg" alt="Fundadores en servicio">
-      <img src="imagenes/Pastor1.jpg" alt="Congreso de familias">
+      <img src="imagenes/pastor1.jpg" alt="Congreso de familias">
       <img src="imagenes/profeta.jpg" alt="Orando por la comunidad">
     </div>
   </section>
