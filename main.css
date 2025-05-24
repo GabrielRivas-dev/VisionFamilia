@@ -1,5 +1,5 @@
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playfair+Display&display=swap');
   /* Estilos generales */
   * {
     box-sizing: border-box;
@@ -9,54 +9,75 @@
 
   body {
     line-height: 1.8;
-    background-color: rgba(142, 44, 62, 1);
+    background-color: #761727;
     color: #333;
     font-family: 'Montserrat', sans-serif;
   }
 
   /* Estilos del header */
   .main-header {
-  background-image: linear-gradient(180deg, rgba(84, 22, 43, 1) 0%, rgba(142, 44, 62, 1) 100%);
+background-image: linear-gradient(180deg, rgb(51, 4, 12) 0%, rgb(74, 14, 23) 100%);
     color: white;
-  
     width: 100%;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    line-height: 1.15;
+    position: relative;
+    padding: 10px 0;
   }
 
-  .header-container {
-    max-width: 1200px;
-    display: flex;
-  }
-  .logo{
-    width: 20%;
+.imagenTrigo{
+  justify-content: center;
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    right: 4%;
+}
+.imagenTrigo img{
+  width: 200px;
+  height: auto;
+}
+  .logo{  
     justify-content: center;
-    display: flex;
+    display: block;
+    position: absolute;
+    top: 1%;
+    left: 4%;
     align-items: center;
     color: #f8cf49;
   }
 
   .logo img {
     height: auto;
-    width: 160px;
+    width: 180px;
   }
   .portada-header{
+    margin-right: 14rem;
     width: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     padding: 10px 0;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   }
   .h3{
-  
     text-align: center;
     font-size: 30px;
+    text-shadow: 0px 0px 3px rgba(251, 255, 0, 1);
   }
   .h2{
-  
-    font-size: 48px;
+  text-shadow: 0px 0px 3px rgba(251, 255, 0, 1);
+    font-size: 52px;
+  }
+  .botones{
+    max-width: 800px;
+    display: flex;
+    justify-content: space-around;
   }
   .botones button {
     background-color: #F8CF49;
@@ -79,8 +100,9 @@
 
   /* Menú principal (desktop) */
   .main-nav ul {
+    margin-top: 1rem;
     display: flex;
-    gap: 1.5rem;
+    gap: 7rem;
     list-style: none;
   }
 
@@ -249,7 +271,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(46, 12, 24, 0.4);
+    background-color: rgba(46, 12, 24, 0.7);
     z-index: 2;
   }
 
@@ -264,14 +286,13 @@
 
   /* Estilos para el texto (opcional) */
   .hero-titulo {
-    font-size: 3.5rem;
+    font-size: 42.5px;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 
   .hero-subtitulo {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+    font-size: 1.1rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   }
 
@@ -406,14 +427,14 @@
 
   /* Línea decorativa bajo el título (opcional) */
   .departamentos .titulo h2::after {
-    content: "";
+    content: '';
     position: absolute;
+    bottom: -10px;
     left: 50%;
-    bottom: 0;
     transform: translateX(-50%);
     width: 80px;
     height: 3px;
-    background: #e74c3c; /* Color del acento */
+    background: linear-gradient(to right, #ae7dac, #f3dadf);
   }
 
   .departamentos {
@@ -620,13 +641,14 @@
 
   .responsables .section {
     scroll-snap-align: start;
-    flex: 0 0 280px;
+    flex: 0 0 320px;
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 15px;
     text-align: center;
     transition: transform 0.3s ease;
+
   }
 
   .responsables .section:hover {
@@ -643,8 +665,10 @@
 
   .responsables .section h2 {
     margin: 10px 0;
-    font-size: 1.2rem;
-    color: #8E2C3E;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #333333;
   }
 
   @keyframes scroll {
@@ -656,7 +680,18 @@
     }
   }
 
+.logoFooter{
+    width: 30%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #f8cf49;
+  }
 
+  .logoFooter img {
+    height: auto;
+    width: 200px;
+  }
 
   /* Footer */
   footer {
@@ -709,7 +744,7 @@
   /* Estilos para sección paralela */
   .vision-mision-paralela {
     padding: 3rem 0;
-    background: rgba(142, 44, 62, 1);
+    background: rgb(121, 26, 43);
   }
 
   .vm-container {
@@ -852,7 +887,7 @@
     background: white;
     border-radius: 8px;
     padding: 2rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 17px 12px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: flex-start;
     transition: transform 0.3s ease;
@@ -865,7 +900,7 @@
   .objetivo-icon {
     width: 40px;
     height: 40px;
-    background-color: #e74c3c;
+    background-color: #761727;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -929,9 +964,9 @@
   }
 
   .section-title span {
-    color: #B44A5C;
+    color: #761727;
     display: block;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-top: 0.5rem;
   }
 
@@ -970,7 +1005,7 @@
   /* Contenedor de imagen superior */
   .paso-imagen {
     width: 100%;
-    height: 180px;
+    height: 300px;
     overflow: hidden;
   }
 
@@ -990,6 +1025,8 @@
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-grow: 1;
   }
 
@@ -1003,7 +1040,7 @@
   .paso-numero {
     width: 36px;
     height: 36px;
-    background-color: #e74c3c;
+    background-color: #761727;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -1013,6 +1050,7 @@
     font-size: 1.1rem;
     margin-right: 1rem;
     flex-shrink: 0;
+    
   }
 
   .paso-contenido h3 {
@@ -1021,6 +1059,7 @@
     margin: 0;
     font-weight: 600;
     line-height: 1.3;
+    text-align: center;
   }
 
   /* Eliminamos la flecha entre cards */
@@ -1087,10 +1126,11 @@
   }
   /* Estilos generales */
   .doctrina-ministerial {
+    width: 100%;
     padding: 0.5rem 3rem 1rem;
     position: relative;
-    max-width: 1400px;
-    margin: 0 auto;
+    
+    margin: 0 0;
     background-color: #F9F5F0;
   }
 
@@ -1114,7 +1154,7 @@
     transform: translateX(-50%);
     width: 80px;
     height: 3px;
-    background: linear-gradient(to right, #ae7dac, #f3dadf);
+    background: linear-gradient(to right, #761727, #fdcdd7);
   }
 
   /* Contenedor del grid */
@@ -1129,7 +1169,8 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
-    margin: 0 auto;
+    margin: auto;
+    padding: 10px 0;
   }
 
   /* Tarjetas de doctrina */
@@ -1138,11 +1179,11 @@
     max-width: 320px;
     background: white;
     border-radius: 12px;
-    padding: 2rem;
+    padding: 0.5rem;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     transition: all 0.3s ease;
-    border-top: 4px solid #e74c3c;
+    border: 4px solid #761727;
   }
 
   .doctrina-card:hover {
@@ -1152,7 +1193,7 @@
 
   .doctrina-icon {
     font-size: 2.5rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.6rem;
     display: inline-block;
     transition: transform 0.3s ease;
   }
@@ -1163,22 +1204,24 @@
 
   .doctrina-card h3 {
     font-size: 1.3rem;
-    color: #2c3e50;
-    margin-bottom: 1rem;
+    color: #33040C;
+    margin-bottom: 0.5rem;
     font-weight: 600;
   }
 
   .doctrina-text {
-    color: #555;
+    color: #121212;
     line-height: 1.6;
     margin-bottom: 1.5rem;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
+    font-weight: 600;
   }
 
   .bible-verse {
     font-style: italic;
-    color: #7f8c8d;
-    font-size: 0.9rem;
+    color: #761727;
+    font-size: 1rem;
+    font-weight: 600;
     margin-top: 1rem;
     display: block;
   }
@@ -1208,7 +1251,7 @@
   }
   /* Estilos del footer */
   .site-footer {
-    background-image: linear-gradient(0deg, rgba(84, 22, 43, 1) 0%, rgba(142, 44, 62, 1) 100%);
+    background-image: linear-gradient(0deg, rgba(67, 9, 19) 0%, rgb(94, 21, 32) 100%);
     color: #ecf0f1;
     padding: 3rem 0 0;
     font-family: 'Arial', sans-serif;
@@ -1513,7 +1556,7 @@
       width: auto;
       height: 600px;
       border-radius: 20%;
-      border: 2px solid #f8cf49;
+      border: 4px solid #401729;
     }
   .proyecto-foto-secundarias{ 
     grid-area: 3 / 1 / 4 / 2;
@@ -1527,12 +1570,13 @@
     width: 200px;
     height: 200px;
     border-radius: 20%;
-    border: 2px solid #f8cf49;
+    border: 4px solid #401729;
   }
   .proyecto-texto { 
     grid-area: 1 / 2 / 4 / 3; 
     padding: 3rem;
     padding-bottom: 0;
+    line-height: 1.5;
   }
   .proyecto-texto h3{
     font-size: 30px;
@@ -1557,13 +1601,14 @@
     display: flex;
     flex-direction: column;
     background-color: #F9F5F0;
-    padding: 0 10px;
+    padding: 0 5px 10px;
     border-radius: 20px;
     border: 1px solid black;
     /* Nuevas propiedades para animación (sin afectar diseño) */
     transition: all 0.3s ease; 
     opacity: 0;
     transform: translateY(15px);
+    font-weight: 600;
   }
 
   /* === DINAMISMO ADICIONAL === */
@@ -1577,6 +1622,7 @@
   .secciones-card:hover {
     transform: translateY(-3px); /* Levanta ligeramente */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    
   }
 
   /* Animación para íconos */
@@ -1787,3 +1833,5 @@ background-color:#F9F5F0 ;
     position: relative;
     overflow: hidden;
 }
+
+

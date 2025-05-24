@@ -13,19 +13,20 @@
 <body>
 
   <header class="main-header">
-    <div class="header-container">
-      <!-- Logo -->
-      <div class="logo">
+    <div class="logo">
         <a href="main.php">
           <img src="imagenes/logo.png" alt="Logo de la Iglesia">
         </a>
+      </div>
+      <div class="imagenTrigo">
+        <img src="imagenes/trigo.png" alt="">
       </div>
       <div class="portada-header">
         <div class="h3">
           <h3>MINISTERIO APOSTÓLICO Y PROFÉTICO</h3>
         </div>
         <div class="h2">
-          <h2>VISIÓN FAMILIA</h2>
+          <h2>VISIÓN DE FAMILIA</h2>
         </div>
         <div class=links>
           <nav class="main-nav">
@@ -54,6 +55,9 @@
           </nav>
         </div>
       </div>
+    <div class="header-container">
+      <!-- Logo -->
+      
 
       <!-- Menú principal (visible en desktop) 
      <nav class="main-nav">
@@ -107,14 +111,17 @@
 
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1 class="hero-titulo">DIOS TE TRAJO AL MEJOR</h1>
-      <p class="hero-subtitulo">Somos un ministerio apostólico y profetico fundamentado en la doctrina de los apostoles,guiado por el espiritu santo y comprometido con la expansion el reino de dios en la tierra</p>
+      <h1 class="hero-titulo">DIOS TE TRAJO AL MEJOR LUGAR</h1>
+      <p class="hero-subtitulo">Somos un ministerio apostólico y profetico fundamentado en la doctrina de los apostoles,</p>
+      <p class="hero-subtitulo">guiado por el Espiritu Santo y comprometido con la expansion el reino de Dios en la tierra</p>
       <div class="botones">
         <a href="nosotros.php">
           <button>Conócenos</button>
         </a>
-
-        <button>Contactar</button>
+        
+        <a href="contacto.php">
+          <button>Contactar</button>
+        </a>
       </div>
     </div>
   </section>
@@ -321,13 +328,13 @@
           <br>
           <h3>Evangelismos</h3>
           <ul>
-            <li>Hogar Cristiano Multiplicador</li>
-            <li>Cafe con Jesus</li>
-            <li>Cine en familia</li>
-            <li>Obras sociales</li>
-            <li>Actividades deportivas</li>
-            <li>Adoracion publica</li>
-            <li>Nacimiento del nuevo ser</li>
+            <li>Hogar Cristiano Multiplicador (HCM)</li>
+            <li>Café con Jesús</li>
+            <li>Cine en Familia</li>
+            <li>Obras Sociales</li>
+            <li>Actividades Deportivas</li>
+            <li>Adoración Pública</li>
+            <li>Nacimiento del Nuevo Ser</li>
             <li>Seminarios</li>
             <li>Ayunos</li>
             <li>Vigilias</li>
@@ -347,7 +354,7 @@
           </div>
           <div class="paso-contenido">
             <div class="paso-numero">1</div>
-            <h3>Proyecto Visionario</h3>
+            <h3>Proyecto de vida</h3>
           </div>
         </div>
 
@@ -398,7 +405,7 @@
     </section>
     <section class="departamentos">
       <div class="titulo">
-        <h2>DEPARTAMENTOS</h2>
+        <h2>MINISTERIOS</h2>
       </div>
       <a href="url_de_la_pagina_registro" class="depto-img">
         <article>
@@ -487,7 +494,7 @@
         <div class="footer-info">
           <!-- Columna de ubicación -->
           <div class="footer-column">
-            <div class="logo">
+            <div class="logoFooter">
               <a href="main.php">
                 <img src="imagenes/logo.png" alt="Logo de la Iglesia">
               </a>
@@ -537,3 +544,4 @@
 </body>
 
 </html>
+
